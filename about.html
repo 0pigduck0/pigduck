@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기술 스택</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Jua', sans-serif;
+            background-color: #ffe6f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            overflow-y: scroll;
+        }
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ff5c8a;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ffe6f2;
+            padding: 50px 0 30px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .layout {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            align-items: flex-start;
+            margin-top: 180px;
+        }
+        .sidebar {
+            width: 180px;
+            background: #ffb6c1;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 180px;
+            left: 20px;
+            height: fit-content;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 14px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .sidebar a:hover {
+            background: #ff99aa;
+        }
+        .container {
+            flex-grow: 1;
+            padding: 30px;
+            margin-left: 230px;
+            margin-right: 320px;
+            text-align: center;
+        }
+        .post {
+            background: #fff;
+            padding: 25px;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+            max-width: 800px;
+        }
+        .post h2 {
+            margin-bottom: 15px;
+            color: #ff5c8a;
+        }
+        .profile-card {
+            width: 270px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: fit-content;
+            position: fixed;
+            top: 180px;
+            right: 20px;
+        }
+        .profile-card img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .profile-card h3 {
+            margin-bottom: 12px;
+        }
+        .profile-card a {
+            display: block;
+            color: #ff5c8a;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 6px 0;
+        }
+        .profile-card a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .layout {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sidebar {
+                width: 100%;
+                text-align: center;
+                position: static;
+                margin-bottom: 25px;
+            }
+            .profile-card {
+                margin-left: 0;
+                margin-top: 25px;
+                position: static;
+            }
+            .container {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">한효정의 홈페이지</div>
+    <div class="layout">
+        <div class="sidebar">
+            <a href="index.html">홈</a>
+            <a href="about.html">자기소개서</a>
+            <a href="skills.html">기술 스택</a>
+            <a href="experience.html">경력</a>
+        </div>
+        
+        <div class="container">
+            <div class="post">
+                <h2>자기소개</h2>
+                <p>저는 언제나 최선을 다해 살아온 사람입니다. 어떤 일이든 단순히 주어진 대로 수행하는 것이 아니라, 거기에서 의미를 찾고 성장할 기회를 만들어 왔습니다. 학창 시절부터 다양한 경험을 통해 세상을 배우고, 사람들과 소통하며 내가 할 수 있는 최선을 고민하는 것이 저의 삶의 방식이었습니다.</p>
+        
+                <p>특히 여러 아르바이트를 하며 <strong>끊임없는 노력과 책임감이 나를 성장시킨다는 것</strong>을 몸소 배웠습니다. 학원에서 행정 업무를 담당하며 학생과 학부모님들의 요구를 정리하고 소통하는 과정에서, 단순한 업무 수행이 아니라 <strong>상대방이 무엇을 필요로 하는지 먼저 생각하는 태도</strong>를 익혔습니다. 카페에서 일할 때는 하루에도 수십, 수백 명의 고객을 응대하며 빠르게 상황을 파악하고, 고객이 만족할 수 있도록 최선을 다하는 것이 중요하다는 것을 깨달았습니다. 이 경험들은 단순한 서비스 업무가 아니라, <strong>사람을 이해하고 신뢰를 쌓아가는 과정</strong>이었습니다.</p>
+        
+                <p>또한, 저는 <strong>환경이 나를 제한할 수 없다고 믿는 사람</strong>입니다. 전문대에 재학 중이었지만, 학문적인 도전에 주저하지 않았고, 결국 논문을 작성하여 <strong>우수논문상을 수상</strong>하는 성과를 이뤄냈습니다. 이는 단순한 성적이 아닌, 한계를 뛰어넘기 위한 저의 도전 정신과 끊임없는 탐구심의 결과였습니다. 논문을 준비하는 과정에서 깊이 있는 자료 조사를 거듭하며 문제를 분석하는 능력을 길렀고, 논리를 구성하고 명확하게 전달하는 문서 작성 역량을 키웠습니다. 그리고 무엇보다 중요한 것은, <strong>어떤 환경에서도 배울 수 있고, 성장할 수 있다는 확신</strong>을 갖게 되었다는 점입니다.</p>
+        
+                <p>이러한 경험들은 기술을 다루는 분야에서도 그대로 적용된다고 생각합니다. 단순히 프로그램을 개발하고 시스템을 운영하는 것이 아니라, <strong>결국 사람을 위한 기술을 만들고, 그 기술을 통해 더 나은 결과를 이끌어내는 것</strong>이 중요하다고 믿습니다. 내가 맡은 일에서 더 효율적인 방법을 고민하고, 문제를 해결하기 위해 깊이 있게 분석하는 태도를 기르는 것이야말로 진정한 전문가로 성장하는 길이라고 생각합니다.</p>
+        
+                <p>저는 ‘어떤 환경에서도 배우고 성장하는 사람’이 되고 싶습니다. 새로운 기술을 익히고, 새로운 환경에서도 빠르게 적응하며, 변화하는 시대 속에서도 끊임없이 고민하는 사람이 되고자 합니다. 이 회사에서도 같은 자세로 임하겠습니다. 단순히 맡은 역할을 수행하는 것이 아니라, <strong>더 나은 방법을 고민하고, 팀과 협력하여 문제를 해결하며, 기술을 통해 회사와 고객에게 가치를 제공하는 인재</strong>가 되겠습니다.</p>
+            </div>
+        </div>
+        
+        <div class="profile-card">
+            <img src="https://polyester-coaster-f98.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F5fb7c435-ed7d-44cc-859e-73b94f2fcce2%2F8b3784db-1c9c-4e2a-8db7-88f17f802c9b%2Fea5f2d78-ab0b-476f-884f-2400e63a3a84.png?table=block&id=15214cf0-94b9-8103-91d2-ea8f83b1d0c3&spaceId=5fb7c435-ed7d-44cc-859e-73b94f2fcce2&width=330&userId=&cache=v2" alt="프로필 사진">
+            <h3>한효정</h3>
+            <p>010-8467-6057<br>pigduck230208@gmail.com</p>
+            <a href="https://blog.naver.com/babypaik">블로그 방문</a>
+        </div>
+    </div>
+</body>
+</html>

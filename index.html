@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기술 스택</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: 'Jua', sans-serif;
+            background-color: #ffe6f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            overflow-y: scroll;
+        }
+        /* 로고 영역 */
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ff5c8a;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ffe6f2;
+            padding: 50px 0 30px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        /* 전체 레이아웃 */
+        .layout {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            align-items: flex-start;
+            margin-top: 180px;
+        }
+        /* 사이드바 */
+        .sidebar {
+            width: 180px;
+            background: #ffb6c1;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 180px;
+            left: 20px;
+            height: fit-content;
+        }
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 14px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .sidebar a:hover {
+            background: #ff99aa;
+        }
+        /* 메인 콘텐츠 */
+        .container {
+            flex-grow: 1;
+            padding: 30px;
+            margin-left: 230px;
+            margin-right: 320px;
+            text-align: center;
+        }
+        .post {
+            background: #fff;
+            padding: 25px;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+            max-width: 800px;
+        }
+        .post h2 {
+            margin-bottom: 15px;
+            color: #ff5c8a;
+        }
+        /* 수상 경력 */
+        .awards .award {
+            background-color: #fff8fa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .awards h3 {
+            color: #ff5c8a;
+        }
+        .awards ul {
+            text-align: left;
+        }
+        /* 프로필 카드 */
+        .profile-card {
+            width: 270px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: fit-content;
+            position: fixed;
+            top: 180px;
+            right: 20px;
+        }
+        .profile-card img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .profile-card h3 {
+            margin-bottom: 12px;
+        }
+        .profile-card a {
+            display: block;
+            color: #ff5c8a;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 6px 0;
+        }
+        .profile-card a:hover {
+            text-decoration: underline;
+        }
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .layout {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sidebar {
+                width: 100%;
+                text-align: center;
+                position: static;
+                margin-bottom: 25px;
+            }
+            .profile-card {
+                margin-left: 0;
+                margin-top: 25px;
+                position: static;
+            }
+            .container {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <<div class="logo">한효정의 홈페이지</div>
+    <div class="layout">
+        <div class="sidebar">
+            <a href="index.html">홈</a>
+            <a href="about.html">자기소개서</a>
+            <a href="skills.html">기술 스택</a>
+            <a href="experience.html">경력</a>
+        </div>
+        
+        <div class="container">
+            <div class="post">
+                <h2>학력</h2>
+                <p>소프트웨어 융합 전문학사(3년제)</p>
+                <p>2025년 졸업</p>
+            </div>
+            
+            <div class="post">
+                <h2>🏆 수상 경력 🏆</h2>
+                <div class="awards">
+                    <div class="award">
+                        <h3>2025.01 - 우수논문상</h3>
+                        <ul>
+                            <li><strong>주최:</strong> 한국컴퓨터정보학회</li>
+                            <li><strong>수상:</strong> 우수상</li>
+                            <li><strong>내용:</strong> 모델링 정확도 향상에 대한 논문으로 수상</li>
+                        </ul>
+                    </div>
+                    <div class="award">
+                        <h3>2024.11 - 학교 캡스톤 대회</h3>
+                        <ul>
+                            <li><strong>주최:</strong> 장안대학교</li>
+                            <li><strong>수상:</strong> 우수상</li>
+                            <li><strong>내용:</strong> 보이스피싱 예방 어플 제작</li>
+                        </ul>
+                    </div>
+
+                    <div class="award">
+                        <h3>2024.11 - 과 캡스톤 대회</h3>
+                        <ul>
+                            <li><strong>주최:</strong> 장안대학교 융합소프트웨어</li>
+                            <li><strong>수상:</strong> 장려상</li>
+                            <li><strong>내용:</strong> 졸업 작품에 대한 기술능력 인정</li>
+                        </ul>
+                    </div>
+                    <div class="award">
+                        <h3>2023.03 - 경기지청장배 기업분석 경진대회</h3>
+                        <ul>
+                            <li><strong>주최:</strong> 고용노동부 경기지청</li>
+                            <li><strong>수상:</strong> 장려상</li>
+                            <li><strong>내용:</strong> 기업의 재무 데이터와 경영 전략을 분석하여 실행 가능한 개선 방안을 제시</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="award">
+                        <h3>2023.09 - 커리어 로드맵 경진대회</h3>
+                        <ul>
+                            <li><strong>주최:</strong> 대학일자리 센터</li>
+                            <li><strong>수상:</strong> 장려상</li>
+                            <li><strong>내용:</strong> 개인의 커리어 비전과 로드맵을 체계적으로 제시하고, 실현 가능성 높은 계획으로 평가받아 수상.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+                <div class="post">
+                    <h2>🌟 대외 활동 🌟</h2>
+                
+                    <div class="awards">
+                        <div class="award">
+                            <h3>RESAT 파밍 챌린지 2기 (프론트엔드 개발자)</h3>
+                            <ul>
+                                <li><strong>주최:</strong> Miniintern</li>
+                                <li><strong>기간:</strong> 2023</li>
+                                <li><strong>활동 내용:</strong>
+                                    <ul>
+                                        <li>각 회차별 주어진 커미션에 따라 <strong>프론트엔드 개발</strong>을 수행.</li>
+                                        <li><strong>우수 수료자</strong>로 선정되어 작성한 코드에 대해 심층 피드백을 제공받음.</li>
+                                        <li><strong>성과:</strong> 프로젝트 전반의 흐름을 이해하며, 프론트엔드의 광범위한 범주와 실제 구현 방식을 체득.</li>
+                                        <li><strong>습득 역량:</strong> React를 포함한 다양한 프론트엔드 기술 스택에 대한 이해도 향상 및 협업 능력 강화.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <div class="award">
+                            <h3>K-해커톤 12 (결선 진출)</h3>
+                            <ul>
+                                <li><strong>주최:</strong> 소프트웨어교육혁신센터</li>
+                                <li><strong>기간:</strong> 2024</li>
+                                <li><strong>활동 내용:</strong>
+                                    <ul>
+                                        <li><strong>프로젝트 주제:</strong> 딥보이스 기술을 분석하고 탐지하는 애플리케이션 개발.</li>
+                                        <li><strong>프로젝트 개요:</strong>
+                                            <ul>
+                                                <li>최근 급부상한 딥보이스 기술의 악용 사례를 예방하고, 이를 탐지하는 시스템을 기획 및 개발.</li>
+                                                <li>지역적 특수성과 사회적 문제를 반영하여, 보안 강화를 목표로 설계된 자유 주제 프로젝트.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>성과:</strong> 전국 대회 결선 진출 및 실제적이고 적용 가능한 보안 솔루션 제시.</li>
+                                        <li><strong>활동 환경:</strong> Windows, Linux, macOS 등 다양한 플랫폼에서 프로젝트를 진행하며 <strong>적응력</strong>과 <strong>새로운 기술 습득 능력</strong>을 배양.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <div class="award">
+                            <h3>사이버 보안 전문가 과정</h3>
+                            <ul>
+                                <li><strong>주최:</strong> 구름</li>
+                                <li><strong>기간:</strong> 2024.07 ~ 2025.03</li>
+                                <li><strong>활동 내용:</strong>
+                                    <ul>
+                                        <li><strong>교육 목표:</strong> 보안 사고 예방 및 안전한 서비스 제공을 목표로 보안 관점을 적용한 개발자로 성장.</li>
+                                        <li><strong>주요 학습:</strong>
+                                            <ul>
+                                                <li><strong>보안 취약점 분석:</strong> 코드에 내재된 보안 문제를 식별하고 이를 해결하기 위한 최적화된 방법론 습득.</li>
+                                                <li><strong>보안 중심 설계:</strong> 개발 단계에서부터 보안 요소를 고려한 시스템 구축 능력 배양.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>성과:</strong> 실제 서비스 개발 환경에서 활용 가능한 정보 보안 역량을 갖춘 개발자로 성장.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+          
+        
+        
+                <div class="award">
+                    <h3>빡공팟</h3>
+                    <ul>
+                        <li><strong>주최:</strong> BUSINESSH4C</li>
+                        <li><strong>기간:</strong> 2025</li>
+                        <li><strong>활동 내용:</strong>
+                            <ul>
+                                <li><strong>교육 목표:</strong> 디지털 장치에서 발생한 범죄나 사고와 관련된 디지털 증거를 수집, 분석, 보전하는 과정 및 기술을 학습.</li>
+                                <li><strong>주요 학습:</strong>
+                                    <ul>
+                                        <li>디지털 포렌식에 대한 이해 및 분석 방법.</li>
+                                        <li>파일 시스템 기초 이해.</li>
+                                        <li>기본 아티팩트 이해 및 분석 도구 사용법.</li>
+                                        <li>CTF 소개 및 문제 풀이 능력.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>성과:</strong> 디지털 포렌식에 대한 기초 지식 마련.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="profile-card">
+            <img src="https://polyester-coaster-f98.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F5fb7c435-ed7d-44cc-859e-73b94f2fcce2%2F8b3784db-1c9c-4e2a-8db7-88f17f802c9b%2Fea5f2d78-ab0b-476f-884f-2400e63a3a84.png?table=block&id=15214cf0-94b9-8103-91d2-ea8f83b1d0c3&spaceId=5fb7c435-ed7d-44cc-859e-73b94f2fcce2&width=330&userId=&cache=v2" alt="프로필 사진">
+            <h3>한효정</h3>
+            <p>010-8467-6057<br>pigduck230208@gmail.com</p>
+            <a href="https://blog.naver.com/babypaik">블로그 방문</a>
+        </div>
+    </div>
+</body>
+</html>
